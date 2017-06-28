@@ -3,14 +3,16 @@
 #
 - name: Gather facts about FC_r5
   oneview_storage_pool_facts:
-    config: "{{ config }}"
+  vars:
+    - config: "/opt/variables/oneview_config.json"
     name: "FC_r5"
 
 - set_fact: Vol_Stor_Pool5_uri="{{ storage_pools[0].uri }}"
 
 - name: Gather facts about Storage System
   oneview_storage_system_facts:
-    config: "{{ config }}"
+  vars:
+    - config: "/opt/variables/oneview_config.json"
   delegate_to: localhost
 
 - set_fact: Vol_Stor_Sys_Uri="{{ storage_systems[0].uri }}"
@@ -19,7 +21,8 @@
 #
 - name: Create ESXi Shared Data Volume
   oneview_volume:
-    config: "{{ config }}"
+  vars:    
+   - config: "/opt/variables/oneview_config.json"
     state: present
     data:
       name: 'Joe-Shared-Vol-Data01'
@@ -36,7 +39,8 @@
 
 - name: Create ESXi Shared Log Volume
   oneview_volume:
-    config: "{{ config }}"
+  vars:    
+   - config: "/opt/variables/oneview_config.json"
     state: present
     data:
       name: 'Joe-Shared-Vol-Log-01'
