@@ -16,7 +16,7 @@
     config: "{{ config }}"
     state: present
     data:
-      name: "Joe's Test Template"
+      name: "JoeTestTemplate"
       description: "Test Description"
       server_hardware: "{{ Serv_b1 }}"
       serverHardwareTypeName: "{{ Serv_Type660 }}"
