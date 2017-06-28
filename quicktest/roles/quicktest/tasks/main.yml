@@ -22,7 +22,7 @@
 - name: Create ESXi Shared Data Volume
   oneview_volume:
           state: present
-        data:
+          data:
         name: 'Joe-Shared-Vol-Data01'
         description: 'Data Volume for ESXi'
         raidLevel: "RAID5"
