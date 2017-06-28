@@ -18,7 +18,7 @@ Serv_Type660: 'SY 660 Gen9 1'
 #
 # Ports & IPs
 #
-IP_Address: '10.0.5.98'
+IP_Address: '10.0.5.103'
 IP_Dns1: '30.5.86.7'
 IP_Dns2: '30.5.86.8'
 IP_Gateway: '10.0.5.1'
