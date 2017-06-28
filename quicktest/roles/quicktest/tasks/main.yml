@@ -21,9 +21,7 @@
 #
 - name: Create ESXi Shared Data Volume
   oneview_volume:
-  vars:    
-      - config: "/opt/variables/oneview_config.json"
-        state: present
+          state: present
         data:
         name: 'Joe-Shared-Vol-Data01'
         description: 'Data Volume for ESXi'
