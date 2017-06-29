@@ -29,8 +29,6 @@
         osCustomAttributes:
           -  name: Hostname
              value: "esxi01"
-          -  name: DomainName
-             value: "dbpoc.uk"
           -  name: ManagementNIC.connectionid
              value: 2
           -  name: ManagementNIC.dhcp
