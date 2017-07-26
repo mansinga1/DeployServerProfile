@@ -1,4 +1,4 @@
-- name: Include all variable files
+- name: Include all variable file
   include_vars:
     dir: 'vars' #change directory if needed
     extensions:
