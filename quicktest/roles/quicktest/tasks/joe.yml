@@ -1,4 +1,0 @@
-- name: Gather facts  oneview_ethernet_network_facts:    
-config: "{{ config }}"    
-name: "{{ DMZ_VLAN }}"    
-- set_fact: NET_VLANDMZ_Uri="{{ ethernet_networks[0].uri }}"
