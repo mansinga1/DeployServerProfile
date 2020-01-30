@@ -1,8 +1,8 @@
 {
-    "ip": "10.0.5.2",
+    "ip": "${ip_address}",
     "credentials": {
-        "userName": "Administrator",
-        "password": "Start123"
+        "userName": "${username}",
+        "password": "${password}"
         },
     "api_version": 300
 }
